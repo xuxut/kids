@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>第二页</title>
+    <!--视口属性-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--ie浏览器专用头部-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--网站图标-->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet"
+          href="css/movie.css"/>
+    <!--根据屏幕大小设置不同样式-->
+    <!--<link media="screen and (min-width:992px)"rel="stylesheet" href="css/index.css"/>-->
+    <!--第三方编写的js文件，让老ie兼容html5新标签；让老ie支持响应式网页的必备内容--css媒体查询-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/movie.js"></script>
+</head>
+<body>
+<!--1.导航条-->
+<div class="navbar navbar-default">
+    <!--1.上部导航-->
+    <div class="container">
+        <div class="row">
+            <!--第一部分：导航条头部-->
+            <div class="navbar-header col-lg-2 col-lg-offset-0 col-sm-2 col-sm-offset-4 row">
+                <!--1.1logo-->
+                <a href="#"class="navbar-brand col-xs-2"><img src="images/logo.png"/></a>
+                <!--1.2汉堡包-->
+                <!--data-toggle="collapse"与第二部分的class="collapse"相关联-->
+                <a href="#menu"data-toggle="collapse"class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <!--第二部分：折叠部分：导航菜单-->
+            <!--导航+按钮+超链接+文本-->
+            <div id="menu"class="collapse navbar-collapse col-lg-4 col-lg-offset-6 col-sm-7 col-sm-offset-3">
+                <ul class="nav navbar-nav">
+                    <li><a class="btn btn-primary"href="indexreal.html">首页</a></li>
+                    <li><a class="btn btn-primary active"href="#">影院</a></li>
+                    <li><a class="btn btn-primary"href="index.html">进入</a></li>
+                    <li><a class="btn btn-primary"target="_blank" href="https://xuxut.github.io/">我的博客</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--2.小背景-->
+    <div class="bg"></div>
+</div>
+<!--2.主体-->
+<div class="container-fluid">
+    <div class="row bg">
+        <!--电影清单-->
+        <div class="col-md-3">
+            <div class="type">
+                <ul>
+                    <li class="btn btn-default btn-lg">电影</li>
+                    <li class="btn btn-warning btn-lg">好评榜</li>
+                    <li class="btn btn-danger btn-lg">新上线</li>
+                </ul>
+                <ul>
+                    <li class="btn btn-default btn-lg">其他类型</li>
+                    <li class="btn btn-primary btn-lg">动画</li>
+                    <li class="btn btn-success btn-lg">儿童综艺</li>
+                </ul>
+            </div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <!--电影播放-->
+        <div class="col-md-6">
+            <div class="movie">
+                <div class="title">电影名</div>
+                <video id="v" src="res/birds.mp4">
+                    您的浏览器版本太低，请升级浏览器！！
+                </video>
+                <div class="control row">
+                    <!--播放/暂停按钮-->
+                    <a class="play glyphicon glyphicon-play col-sm-1"href="#"></a>
+                    <!--<a class="pause glyphicon glyphicon-pause"href="#"></a>-->
+                    <!--时间进度-->
+                    <div class="time col-sm-6">
+                        <span class="ontime">
+                            00:00:00
+                        </span>
+                        <span>|</span>
+                        <span class="alltime">
+                            0:00:00
+                        </span>
+                        <div class="timewidth">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!--声音-->
+                    <div class="voice col-sm-2">
+                        <a href="#"class="glyphicon glyphicon-volume-up"></a>
+                        <!--<i class="glyphicon glyphicon-volume-down"></i>-->
+                        <!--<i class="glyphicon glyphicon-volume-off"></i>-->
+                        <span class="voicewidth">
+                            <span></span>
+                        </span>
+                        <!--声音条-->
+                        <span class="voice-long">
+                            <span></span>
+                        </span>
+                    </div>
+                    <!--倍速-->
+                    <div class="rate col-sm-2">
+                        <a class="btn btn-warning"href="#">1x</a>
+                        <a class="btn btn-warning"href="#">2x</a>
+                    </div>
+                    <!--全屏-->
+                    <a class="glyphicon glyphicon-resize-full col-sm-1"href="#"></a>
+                    <!--<a class="glyphicon glyphicon-resize-small"href="#"></a>-->
+                </div>
+            </div>
+        </div>
+        <!--弹幕-->
+        <div class="send"></div>
+    </div>
+</div>
+
+</body>
+ </html>

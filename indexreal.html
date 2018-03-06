@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>主页</title>
+    <!--视口属性-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--ie浏览器专用头部-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--网站图标-->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet"
+          href="css/indexreal.css"/>
+    <!--根据屏幕大小设置不同样式-->
+    <!--<link media="screen and (min-width:992px)"rel="stylesheet" href="css/index.css"/>-->
+    <!--第三方编写的js文件，让老ie兼容html5新标签；让老ie支持响应式网页的必备内容--css媒体查询-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/html5zoo.js"></script><!--轮播插件-->
+</head>
+<body>
+
+<!--1.导航条-->
+<div class="navbar navbar-default">
+    <!--1.上部导航-->
+    <div class="container">
+      <div class="row">
+        <!--第一部分：导航条头部-->
+        <div class="navbar-header col-lg-2 col-lg-offset-0 col-sm-2 col-sm-offset-4 row">
+            <!--1.1logo-->
+            <a href="#"class="navbar-brand col-xs-2"><img src="images/logo.png"/></a>
+            <!--1.2汉堡包-->
+            <!--data-toggle="collapse"与第二部分的class="collapse"相关联-->
+            <a href="#menu"data-toggle="collapse"class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <!--第二部分：折叠部分：导航菜单-->
+        <!--导航+按钮+超链接+文本-->
+        <div id="menu"class="collapse navbar-collapse col-lg-4 col-lg-offset-6 col-sm-7 col-sm-offset-3">
+            <ul class="nav navbar-nav">
+                <li><a class="btn btn-primary active"href="indexreal.html">首页</a></li>
+                <li><a class="btn btn-primary"href="movie.html">影院</a></li>
+                <li><a class="btn btn-primary"href="index.html">进入页面</a></li>
+                <li><a class="btn  btn-primary"target="_blank"href="https://xuxut.github.io/">我的博客</a></li>
+            </ul>
+        </div>
+       </div>
+    </div>
+    <!--2.小背景-->
+    <div class="bg"></div>
+</div>
+<!--2.轮播-->
+<div class="container b">
+    <div id="html5zoo-1"class="banner col-xs-12">
+        <ul class="html5zoo-slides clear">
+            <li><img src="images/index/slide-17.jpg"alt="001" data-description="这是第1张幻灯" /></li>
+            <li><img src="images/index/slide-27.jpg"/></li>
+            <li><img src="images/index/slide-37.jpg"/></li>
+            <li><img src="images/index/slide-47.jpg"/></li>
+        </ul>
+        <div class="title hidden-xs">你好呀，世界！！！</div>
+        <div class="des hidden-xs">肯定撒谎ID搜阿富汗哦待合格as贵司股市大幅噶第</div>
+        <div class="arrow">
+            <a class="left glyphicon glyphicon-chevron-left"href="#"></a>
+            <a class="fr right glyphicon glyphicon-chevron-right"href="#"></a>
+        </div>
+    </div>
+</div>
+<!--3.轮播下的分类内容-->
+<div class="c">
+    <div class="container">
+        <ul class="kid-top row">
+            <li class="col-sm-4 col-xs-12 row">
+                <img class="col-sm-4 col-xs-3"src="images/icon-2.png"/>
+                <div class="content col-sm-8 col-xs-9">
+                    <h2>操场</h2>
+                    <p class="des">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto blanditiis cum cupiditate dolor
+                    </p>
+                    <a class="btn btn-primary"href="#">更多</a>
+                </div>
+            </li>
+            <li class="col-sm-4 col-xs-12 row">
+                <img class="col-sm-4 col-xs-3"src="images/icon-1.png"/>
+                <div class="content col-sm-8 col-xs-9">
+                    <h2>操场</h2>
+                    <p class="des">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto blanditiis cum cupiditate dolor
+                    </p>
+                    <a class="btn btn-primary"href="#">更多</a>
+                </div>
+            </li>
+            <li class="col-sm-4 col-xs-12 row">
+                <img class="col-sm-4 col-xs-3"src="images/icon-3.png"/>
+                <div class="content col-sm-8 col-xs-9">
+                    <h2>操场</h2>
+                    <p class="des">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto blanditiis cum cupiditate dolor
+                    </p>
+                    <a class="btn btn-primary"href="#">更多</a>
+                </div>
+            </li>
+    </ul>
+    </div>
+</div>
+<!--4.主体-->
+<div class="container m">
+    <!--一：热门人物-->
+    <div class="one">
+        <div class="title row">
+            <h2 class="col-xs-7">热门人物</h2>
+            <div class="icon col-xs-2 col-xs-offset-3">
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+        <ul class="row">
+            <li class="col-xs-8 col-xs-offset-2 col-lg-3 col-sm-4 col-sm-offset-0">
+                <div class="img hovereffect">
+                    <img src="" data-src="images/index/250x250-kos-1.jpg"/>
+                    <div class="search overlay">
+                        <!--<a href="#"></a>-->
+                        <h2>小丸子</h2>
+                        <a class="info" href="#"></a>
+                    </div>
+                </div>
+                <p>图片一</p>
+                <p class="des">Lorem存有胡萝卜。</p>
+            </li>
+            <li class="col-xs-8 col-xs-offset-2  col-lg-3 col-sm-4 col-sm-offset-0 hidden-xs">
+                <div class="img hovereffect">
+                    <img src=""data-src="images/index/250x250-kos-2.jpg"/>
+                    <div class="search overlay">
+                        <!--<a href="#"></a>-->
+                        <h2>小丸子</h2>
+                        <a class="info" href="#"></a>
+                    </div>
+                </div>
+                <p>图片二</p>
+                <p class="des">Lorem存有胡萝卜。</p>
+            </li>
+            <li class="col-xs-8 col-xs-offset-2  col-lg-3 col-sm-4 col-sm-offset-0 hidden-xs">
+                <div class="img hovereffect">
+                    <img src="" data-src="images/index/250x250-kos-3.jpg"/>
+                    <div class="search overlay">
+                        <!--<a href="#"></a>-->
+                        <h2>小丸子</h2>
+                        <a class="info" href="#"></a>
+                    </div>
+                </div>
+                <p>图片三</p>
+                <p class="des">Lorem存有胡萝卜。</p>
+            </li>
+            <li class="col-xs-8 col-xs-offset-2  col-lg-3 col-sm-4 col-sm-offset-0 hidden-xs hidden-sm hidden-md">
+                <div class="img hovereffect">
+                    <img src="" data-src="images/index/250x250-kos-4.jpg"/>
+                    <div class="search overlay">
+                        <!--<a href="#"></a>-->
+                        <h2>小丸子</h2>
+                        <a class="info" href="#"></a>
+                    </div>
+                </div>
+                <p>图片四</p>
+                <p class="des">Lorem存有胡萝卜。</p>
+            </li>
+        </ul>
+    </div>
+    <!--二：近期电影-->
+    <div class="movie">
+        <div class="title row">
+            <h2 class="col-xs-7">近期电影</h2>
+            <div class="icon col-xs-2 col-xs-offset-3">
+                <a href="#">&lt;</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+        <ul class="row movie">
+            <li class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 row">
+                <!--1.日期-->
+               <div class="date col-xs-2">
+                   <p>1</p>
+                   <p>2017.1</p>
+               </div>
+                <!--2.内容-->
+                <div class="content col-xs-10 row">
+                    <!--2.1图片-->
+                    <div class="hovereffect2 img col-xs-7 col-sm-6">
+                        <img class="" src=""data-src="images/index/185x185-img-1.jpg"/>
+                        <div class="overlay">
+                            小丸子
+                        </div>
+                    </div>
+                    <!--标题：最小屏时显示这个标题-->
+                    <h2 class="hidden-md hidden-sm hidden-lg col-xs-2">onegf</h2>
+                    <!--2.2详述-->
+                    <div class="des row col-xs-12 col-sm-6">
+                        <!--标题：大于最小平的时候显示这个-->
+                        <h2 class="hidden-xs">one</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores cum doloremque eaque hic laudantium maxime minus mollitia nam, nulla obcaecati, odio quae quo ratione rerum sequi tenetur voluptate voluptates.</p>
+                    </div>
+                    <!--2.3点击更多-->
+                    <div class="more col-xs-12">
+                        <a class="btn btn-primary"href="#">更多</a>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden-xs hidden-sm col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-6 row">
+                <!--1.日期-->
+                <div class="date col-xs-2">
+                    <p>1</p>
+                    <p>2017.1</p>
+                </div>
+                <!--2.内容-->
+                <div class="content col-xs-10 row">
+                    <!--2.1图片-->
+                    <div class="hovereffect2 img col-xs-7 col-sm-6">
+                        <img class="" src=""data-src="images/index/185x185-img-2.jpg"/>
+                        <div class="overlay">
+                            小丸子
+                        </div>
+                    </div>
+                    <!--标题：大于最小屏时显示-->
+                    <h2 class="hidden-md hidden-sm hidden-lg col-xs-2">onegf</h2>
+                    <!--2.2详述-->
+                    <div class="des row col-xs-12 col-sm-6">
+                        <!--标题：最小平的时候隐藏-->
+                        <h2 class="hidden-xs">one</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores cum doloremque eaque hic laudantium maxime minus mollitia nam, nulla obcaecati, odio quae quo ratione rerum sequi tenetur voluptate voluptates.</p>
+                    </div>
+                    <!--2.3点击更多-->
+                    <div class="more col-xs-12">
+                        <a class="btn btn-primary"href="#">更多</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--三：影院介绍-->
+    <div class="about hidden-xs hidden-sm">
+        <div class="title row">
+            <h2 class="col-md-7">影院介绍</h2>
+        </div>
+        <div class="content row">
+            <div class="img col-md-2">
+                <img class=""src=""data-src="images/index/250x250-kos-1.jpg"/>
+            </div>
+            <div class="des col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad alias blanditiis corporis deserunt distinctio, eaque esse eveniet explicabo, laudantium magnam porro quasi ratione sapiente sed veniam voluptatibus. Beatae?</div>
+        </div>
+    </div>
+    <!--四：影院评价-->
+    <div class="more row">
+        <!--1.评价-->
+        <div class="mark col-xs-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-sm-10 col-md-4">
+            <!--1.1标题-->
+            <div class="title row">
+                <h2 class="col-xs-5">影院评价</h2>
+                <div class="icon col-xs-3 col-xs-offset-4">
+                    <a href="#">&lt;</a>
+                    <a href="#">&gt;</a>
+                </div>
+            </div>
+            <!--1.2内容-->
+            <ul class="content">
+                <li class="row">
+                    <div class="img col-xs-4">
+                        <img src="" data-src="images/index/250x250-kos-1.jpg"/>
+                    </div>
+                    <div class="des col-xs-8">
+                        <span>“</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum, eius laboriosam modi nulla quia voluptas?&nbsp;&nbsp;&nbsp;</span>
+                        <span>”</span>
+                    </div>
+                    <div class="person col-xs-12">张三</div>
+                </li>
+                <li class="hidden-xs hidden-sm row">
+                    <div class="img col-xs-4">
+                        <img src="" data-src="images/index/250x250-kos-1.jpg"/>
+                    </div>
+                    <div class="des col-xs-8">
+                        <span>“</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum, eius laboriosam modi nulla quia voluptas?&nbsp;&nbsp;&nbsp;</span>
+                        <span>”</span>
+                    </div>
+                    <div class="person col-xs-12">张三</div>
+                </li>
+            </ul>
+        </div>
+        <!--2.图库-->
+        <div class="photo col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 col-md-4">
+            <!--2.1标题-->
+            <div class="title row">
+                <h2 class="col-xs-5">图库</h2>
+                <div class="icon col-xs-3 col-xs-offset-4">
+                    <a href="#">&lt;</a>
+                    <a href="#">&gt;</a>
+                </div>
+            </div>
+            <!--2.2图片-->
+            <ul>
+                <li><img src="" data-src="images/index/347x347-img-1.jpg"/></li>
+            </ul>
+        </div>
+        <!--3.进度条-->
+        <ul class="pg col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
+            <li>
+                <p class="title">one你</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" ></div>
+                </div>
+            </li>
+            <li>
+                <p class="title">two你</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" ></div>
+                </div>
+            </li>
+            <li>
+                <p class="title">three你</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" ></div>
+                </div>
+            </li>
+            <li>
+                <p class="title">one你</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped active" ></div>
+                </div>
+            </li>
+            <li>
+                <p class="title">one你</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" ></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--5.底部-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!--帖子-->
+            <div class="post col-md-6 col-xs-12">
+                <div class="title">帖子</div>
+                <ul>
+                    <li class="row">
+                        <div class="img col-xs-3">
+                            <img src="images/index/185x185-img-1.jpg"/>
+                        </div>
+                        <div class="review col-xs-9">
+                            <div class="title">on你说的e</div>
+                            <div class="des">你啥都好hello</div>
+                            <div class="date">2017年2月5日</div>
+                        </div>
+                        <hr class="col-xs-12"/>
+                    </li>
+                    <li class="row">
+                        <div class="img col-xs-3"><img src="images/index/185x185-img-1.jpg"
+                                                       alt=""/></div>
+                        <div class="review col-xs-9">
+                            <div class="title">on你说的e</div>
+                            <div class="des">你啥都好hello</div>
+                            <div class="date">2017年2月5日</div>
+                        </div>
+                        <hr class="col-xs-12"/>
+                    </li>
+                </ul>
+            </div>
+            <!--日历-->
+            <div class="calendar hidden-xs hidden-sm col-md-6">
+                <div class="title">日历</div>
+                <div class="cl">
+                    <div class="nowdate">2018年2月5日</div>
+                    <div class="maindate">
+                        <ul class="weekday clear">
+                            <li class="">周日</li>
+                            <li class="">周一</li>
+                            <li class="">周二</li>
+                            <li class="">周三</li>
+                            <li class="">周四</li>
+                            <li class="">周五</li>
+                            <li class="">周六</li>
+                        </ul>
+                        <ul class="day clear">
+                            <li>1</li>
+                            <li class="current">5</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--6.回顶部箭头-->
+<a href="#" class="totop glyphicon glyphicon-arrow-up"></a>
+
+<script src="js/indexreal.js"></script>
+</body>
+</html>
