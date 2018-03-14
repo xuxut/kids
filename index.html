@@ -6,17 +6,17 @@
     <!--视口属性-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--ie浏览器专用头部-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--网站图标-->
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet"
           href="css/jquery.fullPage.css"/>
     <link rel="stylesheet" href="css/base.css"/>
-    <link rel="stylesheet"
-          href="css/index.css"/>
+<!--     <link rel="stylesheet" -->
+<!--           href="css/index.css"/> -->
     <!--根据屏幕大小设置不同样式-->
-    <!--<link media="screen and (min-width:992px)"rel="stylesheet" href="css/index.css"/>-->
+    <link media="screen and (min-width:992px)"rel="stylesheet" href="css/index.css"/>
     <!--第三方编写的js文件，让老ie兼容html5新标签；让老ie支持响应式网页的必备内容--css媒体查询-->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
@@ -27,147 +27,169 @@
     <script src="js/jquery.fullPage.min.js"></script><!--全屏插件-->
     <script src="js/commonFunctions.js"></script><!--动画-->
     <script src="js/bootstrap.js"></script>
-
+<style>
+/*进入主页*/
+.smallpage{
+	width:200px;
+	height:100px;
+	line-height:100px;
+	font-size:30px;
+	font-weight:bold;
+	border-radius:20px;
+	background:pink;
+	z-index:10;
+	position:absolute;
+	top:50%;
+	left:50%;
+	text-align:center;
+	margin-top:-50px;
+	margin-left:-100px;
+}
+</style>
 </head>
 <body>
 <!--7.鼠标（拖拽原理）-->
 <div class="mouse">
-    <img src="images/pencil_green.gif"/>
+    <img src="images/pencil_green.gif" class="hidden-xs hidden-sm"/>
 </div>
+
 <div id="fullpage">
-    <div class="section one">
-        <canvas class="canvas"width="1900px"height="1000px"></canvas>
-        <!--摩天轮-->
-        <!--实现原理：父盒子正向旋转一圈，小人逆向旋转一圈，无限循环-->
-        <div class="roll">
-            <img src="images/in/fsw.png"/>
-            <img src="images/in/boy.png"/>
-            <img src="images/in/girl.png"/>
-            <img src="images/in/shamegirl.png"/>
-            <img src="images/in/shamegirl.png"/>
-        </div>
-        <!--文字-->
-        <!--飞入原理：使用css设置初始位置，和激活(.active)的位置，进行过渡-->
-        <div class="text fr">
-            <h2 class="">走上程序道路的人</h2>
-            <h2 class="">眼里总有别人
-                <span>看</span>
-                <span>不</span>
-                <span>见</span>
-                <span>的</span>
-                <span>世</span>
-                <span>界</span>
-            </h2>
-        </div>
-    </div>
-    <div class="section two">
-        <canvas class="canvas"width="1900px"height="1000px"></canvas>
-        <!--女孩滑梯-->
-        <div class="img">
-            <img src="images/in/79a9b330239fe736093943fc20f822ec.png"/>
-            <img src="images/in/cloud.png"/>
-        </div>
-        <!--旋转立方体-->
-        <div class="box">
-            <div class="one">
-                <img src="images/index/250x250-kos-1.jpg"/>
-            </div>
-            <div class="two">
-                <img src="images/index/250x250-kos-2.jpg"/>
-            </div>
-            <div class="three">
-                <img src="images/index/250x250-kos-3.jpg"/>
-            </div>
-            <div class="four">
-                <img src="images/index/250x250-kos-4.jpg"/>
-            </div>
-            <div class="five">
-                <img src="images/index/250x250-kos-5.jpg"/>
-            </div>
-            <div class="six">
-                <img src="images/index/250x250-kos-6.jpg"/>
-            </div>
-        </div>
-    </div>
-    <div class="section three">
-        <canvas class="canvas"width="1900px"height="1000px"></canvas>
-        <ul class="clear">
-            <li>
-                <a href="#">
-                    <img src="images/index/250x250-kos-7.jpg"/>
-                </a>
-                <a href="#">
-                </a>
-                <a href="#">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/index/250x250-kos-8.jpg"/>
-                </a>
-                <a href="#">
-                    <img src="images/index/250x250-kos-8.jpg"/>
-                </a>
-                <a href="#">
-                    <img src="images/index/250x250-kos-8.jpg"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/index/250x250-kos-9.jpg"/>
-                </a>
-                <a href="#">
-                    <img src="images/index/250x250-kos-9.jpg"/>
-                </a>
-                <a href="#">
-                    <img src="images/index/250x250-kos-9.jpg"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/index/250x250-kos-10.jpg"/>
-                </a>
-                <a href="#">
-                    <img src="images/index/250x250-kos-10.jpg"/>
-                </a>
-                <a href="#">
-                    <img src="images/index/250x250-kos-10.jpg"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/index/250x250-kos-12.jpg"/>
-                </a>
-                <a href="#">
-                </a>
-                <a href="#">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="section four">
-        <canvas class="canvas"width="1900px"height="1000px"></canvas>
-        <div class="num">
-            <h2>5</h2>
-            <h2>4</h2>
-            <h2>3</h2>
-            <h2>2</h2>
-            <h2>1</h2>
-        </div>
-        <div class="loading">
-            <h2>正在进入...</h2>
-            <p></p>
-        </div>
-        <div class="img">
-            <img src="images/in/g.png"
-                 alt=""/>
-        </div>
-        <a href="indexreal.html">
-            <img src="images/in/cl.png"/>
-            <span>Click Me!</span>
-        </a>
-    </div>
+			<div class="section one">
+					<canvas class="canvas"width="1900px"height="1000px"></canvas>
+					<!--进入主页-->
+					<a href="indexreal.html"class="smallpage hidden-md hidden-lg">进入主页</a>
+					<!--摩天轮-->
+					<!--实现原理：父盒子正向旋转一圈，小人逆向旋转一圈，无限循环-->
+					<div class="roll">
+							<img src="images/in/fsw.png"/>
+							<img src="images/in/boy.png"/>
+							<img src="images/in/girl.png"/>
+							<img src="images/in/shamegirl.png"/>
+							<img src="images/in/shamegirl.png"/>
+					</div>
+					<!--文字-->
+					<!--飞入原理：使用css设置初始位置，和激活(.active)的位置，进行过渡-->
+					<div class="text fr">
+							<h2 class="">走上程序道路的人</h2>
+							<h2 class="">眼里总有别人
+									<span>看</span>
+									<span>不</span>
+									<span>见</span>
+									<span>的</span>
+									<span>世</span>
+									<span>界</span>
+							</h2>
+					</div>
+			</div>
+			<div class="section two">
+					<canvas class="canvas"width="1900px"height="1000px"></canvas>
+					<!--女孩滑梯-->
+					<div class="img">
+							<img src="images/in/79a9b330239fe736093943fc20f822ec.png"/>
+							<img src="images/in/cloud.png"/>
+					</div>
+					<!--旋转立方体-->
+					<div class="box">
+							<div class="one">
+									<img src="images/index/250x250-kos-1.jpg"/>
+							</div>
+							<div class="two">
+									<img src="images/index/250x250-kos-2.jpg"/>
+							</div>
+							<div class="three">
+									<img src="images/index/250x250-kos-3.jpg"/>
+							</div>
+							<div class="four">
+									<img src="images/index/250x250-kos-4.jpg"/>
+							</div>
+							<div class="five">
+									<img src="images/index/250x250-kos-5.jpg"/>
+							</div>
+							<div class="six">
+									<img src="images/index/250x250-kos-6.jpg"/>
+							</div>
+					</div>
+			</div>
+			<div class="section three">
+					<canvas class="canvas"width="1900px"height="1000px"></canvas>
+					<ul class="clear">
+							<li>
+									<a href="#">
+											<img src="images/index/250x250-kos-7.jpg"/>
+									</a>
+									<a href="#">
+									</a>
+									<a href="#">
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<img src="images/index/250x250-kos-8.jpg"/>
+									</a>
+									<a href="#">
+											<img src="images/index/250x250-kos-8.jpg"/>
+									</a>
+									<a href="#">
+											<img src="images/index/250x250-kos-8.jpg"/>
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<img src="images/index/250x250-kos-9.jpg"/>
+									</a>
+									<a href="#">
+											<img src="images/index/250x250-kos-9.jpg"/>
+									</a>
+									<a href="#">
+											<img src="images/index/250x250-kos-9.jpg"/>
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<img src="images/index/250x250-kos-10.jpg"/>
+									</a>
+									<a href="#">
+											<img src="images/index/250x250-kos-10.jpg"/>
+									</a>
+									<a href="#">
+											<img src="images/index/250x250-kos-10.jpg"/>
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<img src="images/index/250x250-kos-12.jpg"/>
+									</a>
+									<a href="#">
+									</a>
+									<a href="#">
+									</a>
+							</li>
+					</ul>
+			</div>
+			<div class="section four">
+					<canvas class="canvas"width="1900px"height="1000px"></canvas>
+					<div class="num">
+							<h2>5</h2>
+							<h2>4</h2>
+							<h2>3</h2>
+							<h2>2</h2>
+							<h2>1</h2>
+					</div>
+					<div class="loading">
+							<h2>正在进入...</h2>
+							<p></p>
+					</div>
+					<div class="img">
+							<img src="images/in/g.png"
+									 alt=""/>
+					</div>
+					<a href="indexreal.html">
+							<img src="images/in/cl.png"/>
+							<span>Click Me!</span>
+					</a>
+			</div>
 </div>
+
 <script src="js/index.js"></script>
 
 </body>
