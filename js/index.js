@@ -22,7 +22,7 @@ $(()=>{
         //console.log(e.offsetX);
         //e.offsetX/Y是鼠标距离符合自的距离
         $(".mouse").css("display","block");
-        $(this).css("cursor","none");
+//        $(this).css("cursor","none");
     })
         //鼠标移动
         .on("mousemove",function(e){
